@@ -1,1 +1,47 @@
-
+{
+  "plans": {
+    "plan_1": {
+      "plan_name": "الباقة الأساسية الأولى",
+      "allowed_m3u_urls": [
+        "https://demo.unified-streaming.com/channels/basic.m3u8"
+      ],
+      "allowed_xtream_servers": [
+        {
+          "host": "http://xtream-server-example.com:8080",
+          "user": "sub_user_1",
+          "pass": "sub_pass_1"
+        }
+      ]
+    },
+    "plan_2": {
+      "plan_name": "الباقة الVIP الفائقة",
+      "allowed_m3u_urls": [
+        "https://demo.unified-streaming.com/channels/premium.m3u8",
+        "https://demo.unified-streaming.com/channels/sports.m3u8"
+      ],
+      "allowed_xtream_servers": [
+        {
+          "host": "http://premium-iptv.net:2086",
+          "user": "vip_user",
+          "pass": "vip_password"
+        }
+      ]
+    }
+  },
+  "subscribers": [
+    {
+      "username": "user01",
+      "password": "user01Pass_Secure",
+      "plan_id": "plan_1",
+      "subscription_date": "2026-01-01",
+      "expiry_date": "2027-01-01"
+    },
+    {
+      "username": "vip_member",
+      "password": "VipSecurePassword2026",
+      "plan_id": "plan_2",
+      "subscription_date": "2026-06-25",
+      "expiry_date": "2027-06-25"
+    }
+  ]
+}
